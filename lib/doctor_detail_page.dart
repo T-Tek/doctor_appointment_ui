@@ -16,6 +16,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Colors.blue[900],
+        title: Text("Doctor's Details"),
         centerTitle: true,
         leading: GestureDetector(
           onTap: () {
@@ -45,7 +46,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             Container(
               height: 120,
               decoration: BoxDecoration(
-                  color: Colors.blue[900],
+                  color: Colors.blue[800],
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30))),
@@ -71,7 +72,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                               'Dr Temi Iyanoye',
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 22,
+                                fontSize: 20,
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w700,
                               ),
