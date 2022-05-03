@@ -55,7 +55,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                 child: Row(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(bottom: 20),
+                      margin: EdgeInsets.only(bottom: 1),
                       child: Image.asset(
                         "images/dr_1.png",
                       ),
@@ -67,7 +67,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(top: 5),
+                            margin: EdgeInsets.only(top: 11),
                             child: Text(
                               'Dr Temi Iyanoye',
                               style: TextStyle(
