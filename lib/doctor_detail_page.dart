@@ -122,24 +122,24 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 20, top: 15, right: 20),
+              margin: EdgeInsets.only(left: 20, top: 10, right: 20),
               height: 70,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  demoDates("Mon", "21", true),
-                  demoDates("Tue", "22", false),
-                  demoDates("Wed", "23", false),
-                  demoDates("Thur", "24", false),
-                  demoDates("Fri", "25", false),
-                  demoDates("Sat", "26", false),
-                  demoDates("Sun", "27", false),
-                  demoDates("Mon", "28", false),
+                  demoDates("Mon", "11", true),
+                  demoDates("Tue", "12", false),
+                  demoDates("Wed", "13", false),
+                  demoDates("Thur", "14", false),
+                  demoDates("Fri", "15", false),
+                  demoDates("Sat", "16", false),
+                  demoDates("Sun", "17", false),
+                  demoDates("Mon", "18", false),
                 ],
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 20, top: 20),
+              margin: EdgeInsets.only(left: 20, top: 10),
               child: Text(
                 'Morning',
                 style: TextStyle(
@@ -168,7 +168,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left: 25, top: 15),
+              margin: EdgeInsets.only(left: 25, top: 10),
               child: Text(
                 'Evening',
                 style: TextStyle(
@@ -208,8 +208,8 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                   BoxShadow(
                     color: Color(0x17000000),
                     offset: Offset(0, 15),
-                    blurRadius: 15,
-                    spreadRadius: 0,
+                    blurRadius: 5,
+                    spreadRadius: 5,
                   ),
                 ],
               ),

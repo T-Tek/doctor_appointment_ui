@@ -222,27 +222,27 @@ class _HomePageState extends State<HomePage> {
                       "Dr Temi Iyanoye",
                       "Heart Surgeon",
                       "4.1",
-                      "",
+                   
                     ),
                     demoTopRatedDr(
                       "images/dr_2.png",
                       "Dr. Victoria Leo",
                       "Bone Surgeon",
                       "4.2",
-                      "",
+                   
                     ),
                     demoTopRatedDr(
                       "images/dr_3.png",
                       "Dr. Rashydon Adebisi",
                       "Eyes Surgeon",
                       "4.4",
-                      "",
+               
                     ),
                     demoTopRatedDr(
                         "images/dr_2.png", 
                         "Dr. Fred Mask", 
                         "Heart Surgeon", 
-                        "4.3", ""),
+                        "4.3",),
                   ],
                 ),
               ),
@@ -299,7 +299,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget demoTopRatedDr(String image, String name, String speciality,
-      String rating, String distance) {
+      String rating) {
     var size = MediaQuery.of(context).size;
     return GestureDetector(
       onTap: () {
@@ -326,7 +326,6 @@ class _HomePageState extends State<HomePage> {
               margin: EdgeInsets.only(left: 20, top: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
                     margin: EdgeInsets.only(top: 2),
@@ -341,37 +340,46 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   Container(
-                    
                     margin: EdgeInsets.only(top: 10, ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          child: 
-                            Text(
-                              speciality,
-                              style: TextStyle(
-                                color: Color(0xffababab),
-                                fontFamily: 'Roboto',
-                                fontWeight: FontWeight.w500,
-                              ),
+                          child: Text(
+                            speciality,
+                            style: TextStyle(
+                              color: Color(0xffababab),
+                              fontFamily: 'Roboto',
+                              fontWeight: FontWeight.w500,
                             ),
+                          ),
                         ),
-                      SizedBox(width: 20,),
-                            Text( "Rating: ",
+                        SizedBox(width: 30,),
+                        Container(
+                          child: Row(
+                            
+                            children: [
+                                Text( "Rating: ",
                                   style: TextStyle(
                                 color: Color(0xffababab),
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                               )),
-                      
-                            Text(rating,
+                                 Text(rating,
                                 style: TextStyle(
                                 color: Color(0xffababab),
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w500,
                               )
                                   ),
+
+                            ],
+                          )
+                          
+                        ),
+                      
+                      
+                     
                       ],
                     ),
                   ),
