@@ -46,7 +46,9 @@ class _HomePageState extends State<HomePage> {
         decoration: BoxDecoration(
             color: Colors.white54,
             borderRadius: BorderRadius.only(
-                topRight: Radius.circular(30), topLeft: Radius.circular(30))),
+                topRight: Radius.circular(50), 
+                )
+                ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -77,7 +79,7 @@ class _HomePageState extends State<HomePage> {
             Container(
               margin: EdgeInsets.only(top: 8, left: 20, right: 20),
               width: size.width,
-              height: 60,
+              height: 40,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
@@ -100,7 +102,7 @@ class _HomePageState extends State<HomePage> {
                         maxLines: 1,
                         autofocus: false,
                         style:
-                            TextStyle(color: Color(0xff107163), fontSize: 20),
+                            TextStyle(color: Color(0xff107163), fontSize: 15),
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Search..',
@@ -163,7 +165,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             Container(
-              height: 112,
+              height: 100,
               margin: EdgeInsets.only(top: 8, left: 20),
               child: ListView(
                 scrollDirection: Axis.horizontal,
@@ -225,19 +227,22 @@ class _HomePageState extends State<HomePage> {
                     demoTopRatedDr(
                       "images/dr_2.png",
                       "Dr. Victoria Leo",
-                      "Bone ",
+                      "Bone Surgeon",
                       "4.2",
                       "",
                     ),
                     demoTopRatedDr(
                       "images/dr_3.png",
-                      "Dr. Zac Wolff",
-                      "Eyes",
+                      "Dr. Rashydon Adebisi",
+                      "Eyes Surgeon",
                       "4.4",
                       "",
                     ),
                     demoTopRatedDr(
-                        "images/dr_2.png", "Dr. Fred Mask", "Heart", "4.3", ""),
+                        "images/dr_2.png", 
+                        "Dr. Fred Mask", 
+                        "Heart Surgeon", 
+                        "4.3", ""),
                   ],
                 ),
               ),
@@ -250,8 +255,8 @@ class _HomePageState extends State<HomePage> {
 
   Widget demoCategories(String image, String name, String drCount) {
     return Container(
-      width: 100,
-      margin: EdgeInsets.only(right: 15),
+      width: 90,
+      margin: EdgeInsets.only(right: 10),
       decoration: BoxDecoration(
         color: Colors.blue[700],
         borderRadius: BorderRadius.circular(10),
@@ -302,7 +307,7 @@ class _HomePageState extends State<HomePage> {
             MaterialPageRoute(builder: (context) => DoctorDetailPage()));
       },
       child: Container(
-        height: 70,
+        height: 67,
         // width: size.width,
         margin: EdgeInsets.only(top: 8),
         decoration: BoxDecoration(
@@ -324,7 +329,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(top: 10),
+                    margin: EdgeInsets.only(top: 2),
                     child: Text(
                       name,
                       style: TextStyle(

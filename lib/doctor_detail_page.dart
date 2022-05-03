@@ -15,7 +15,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Color(0xff053F5E),
+        backgroundColor: Colors.blue[900],
         centerTitle: true,
         leading: GestureDetector(
           onTap: () {
@@ -45,7 +45,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             Container(
               height: 120,
               decoration: BoxDecoration(
-                  color: Color(0xff053F5E),
+                  color: Colors.blue[900],
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30))),
@@ -114,7 +114,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                 'April 2022',
                 style: TextStyle(
                   color: Color(0xff363636),
-                  fontSize: 25,
+                  fontSize: 17,
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w700,
                 ),
@@ -122,7 +122,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             ),
             Container(
               margin: EdgeInsets.only(left: 20, top: 15, right: 20),
-              height: 90,
+              height: 70,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -143,7 +143,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                 'Morning',
                 style: TextStyle(
                   color: Color(0xff363636),
-                  fontSize: 25,
+                  fontSize: 17,
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w700,
                 ),
@@ -172,7 +172,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                 'Evening',
                 style: TextStyle(
                   color: Color(0xff363636),
-                  fontSize: 25,
+                  fontSize: 17,
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w700,
                 ),
@@ -201,7 +201,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
               height: 54,
               margin: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: Color(0xff107163),
+                color: Colors.blue[900],
                 borderRadius: BorderRadius.circular(5),
                 boxShadow: [
                   BoxShadow(
@@ -233,9 +233,9 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
     return isSelected
         ? Container(
             width: 70,
-            margin: EdgeInsets.only(right: 15),
+            margin: EdgeInsets.only(right: 8),
             decoration: BoxDecoration(
-              color: Color(0xff107163),
+              color: Colors.blue[600],
               borderRadius: BorderRadius.circular(10),
             ),
             child: Column(
@@ -271,7 +271,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
             width: 70,
             margin: EdgeInsets.only(right: 15),
             decoration: BoxDecoration(
-              color: Color(0xffEEEEEE),
+              color: Colors.blue[50],
               borderRadius: BorderRadius.circular(10),
             ),
             child: Column(
@@ -310,7 +310,7 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
         ? Container(
             margin: EdgeInsets.only(left: 20, top: 10),
             decoration: BoxDecoration(
-              color: Color(0xff107163),
+              color: Colors.blue[600],
               borderRadius: BorderRadius.circular(5),
             ),
             child: Row(
